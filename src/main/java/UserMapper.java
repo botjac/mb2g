@@ -11,4 +11,9 @@ public interface UserMapper {
     @Mapping(source = "lastName", target = "lastName")
     @Mapping(source = "email", target = "email")
     UserCommand UserToUserCommand(User user);
+
+    @Mapping(source = "firstName", target = "firstName")
+    @Mapping(source = "lastName", target = "lastName")
+    @Mapping(source = "email", target = "email")
+    User UserCommandToUser(UserCommand userCommand);
 }
