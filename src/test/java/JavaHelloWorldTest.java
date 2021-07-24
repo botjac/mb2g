@@ -1,5 +1,7 @@
 public class JavaHelloWorldTest {
 
-    public void getHello() {
+    public void testGetHello() {
+        JavaHelloWorld javaHelloWorld = new JavaHelloWorld();
+        assert("Hello World".equals(javaHelloWorld.getHello()));
     }
 }
