@@ -1,11 +1,12 @@
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.*;
 
-class HelloWorldTest {
+public class HelloWorldTest {
 
     @Test
-    void testGetHello() {
-        assert (true);
+    public void getHello() {
+        HelloWorld helloWorld = new HelloWorld();
+        assert ("Hello World".equals(helloWorld.getHello()));
     }
 }
