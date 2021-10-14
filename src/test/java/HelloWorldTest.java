@@ -6,7 +6,7 @@ public class HelloWorldTest {
 
     @Test
     public void getHello() {
-        System.out.println("Running junit test");
+        System.out.println("Running junit4 test");
         HelloWorld helloWorld = new HelloWorld();
         assertEquals("Hello World", helloWorld.getHello());
     }
